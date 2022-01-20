@@ -1,11 +1,12 @@
 import {useRouter} from "next/router";
+import {MainContainer} from "../../components/MainContainer/MainContainer";
 
 export default function ({user}) {
     return (
-        <>
+        <MainContainer>
             <h1>User {user.id}</h1>
             <h2>{user.name}</h2>
-        </>
+        </MainContainer>
     )
 }
 
